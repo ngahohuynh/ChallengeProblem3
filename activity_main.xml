@@ -1,89 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+//Set LinearLayout
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/blue"            //set màu background
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imgFacebook"
+        android:id="@+id/imgFacebook"           //hình logo Facebook
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
-        app:srcCompat="@drawable/facebooklogo" />
+        app:srcCompat="@drawable/facebook" />
 
     <EditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etUsername"                //editText để nhập Username
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/et_rounded_corners"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:background="@drawable/et_rounded_corners"           //sử dụng et_rounded_corners ở đây
         android:ems="10"
         android:hint="@string/hint_email_phone"
         android:inputType="textPersonName"
-        android:padding="10dp"
+        android:padding="@dimen/text_padding"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="@dimen/text_size_small" />
 
     <EditText
-        android:id="@+id/etPass"
+        android:id="@+id/etPass"                            //editText để nhập Password
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/et_rounded_corners"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:background="@drawable/et_rounded_corners"               //sử dụng et_rounded_corners ở đây
         android:ems="10"
         android:hint="@string/hint_pass"
         android:inputType="textPassword"
-        android:padding="10dp"
+        android:padding="@dimen/text_padding"
         android:textColor="@android:color/black"
-        android:textSize="15sp" />
+        android:textSize="@dimen/text_size_small" />
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnSubmit"                     //Login button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/btn_rounded_corners"
-        android:padding="10dp"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:background="@drawable/btn_rounded_corners"              //sử dụng btn_rounded_corners ở đây
+        android:padding="@dimen/text_padding"
         android:text="@string/text_login"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textAllCaps="false"                             //tắt TextAllCaps
+        android:textColor="@color/white"                        //set màu chữ thành white
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold" />                             //set textStyle thành bold
 
+    
+    //tạo RelativeLayout
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp">
 
         <TextView
-            android:id="@+id/tvSignup"
+            android:id="@+id/tvSignup"                                  //textView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"                     //set ở dưới cùng màn hình
+            android:layout_centerHorizontal="true"                      //set center theo chiều ngang
             android:text="@string/text_sign_up"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textColor="@color/white"                            //set màu chữ thành white
+            android:textSize="@dimen/text_size_small" />
 
         <ImageView
-            android:id="@+id/imgHelp"
+            android:id="@+id/imgHelp"                                   //hình ảnh dấu hỏi chấm (help button)
             android:layout_width="83dp"
             android:layout_height="40dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"                     //set ở dưới cùng màn hình
+            android:layout_alignParentEnd="true"                        //set ở góc bên phải
             app:srcCompat="@drawable/help" />
     </RelativeLayout>
 </LinearLayout>

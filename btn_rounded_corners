@@ -1,9 +1,17 @@
+//Dùng để tạo button có viền tròn
+
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
+    
+        // set hình dạng là hình chữ nhật
         <shape android:shape="rectangle">
+        
+        // set màu background và viền
             <solid android:color="@color/blue_dark"/>
             <stroke android:color="@color/blue_dark" android:width="2dp"/>
+            
+            //set độ cong của viền
             <corners android:radius="10dp"/>
         </shape>
     </item>

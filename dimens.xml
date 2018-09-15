@@ -2,7 +2,7 @@
 
 <resources>
 
-  
+  //các thông số về margin
   <dimen name="activity_horizontal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
   
@@ -11,8 +11,12 @@
   <dimen name="edit_margin_top">15dp</dimen>
   <dimen name="edit_margin_bottom">15dp</dimen>
   
+  
+  //thông số về padding
   <dimen name="text_padding">10dp</dimen>
   
+  
+  //thông số về cỡ chữ
   <dimen name="text_size_large">20sp</dimen>
   <dimen name="text_size_small">15sp</dimen>
   
